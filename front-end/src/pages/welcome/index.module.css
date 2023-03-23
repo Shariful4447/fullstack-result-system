@@ -1,0 +1,28 @@
+.Root {
+  height: 100vh;
+  background-image: url("../../assets/background.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.Content {
+  background: rgba(255, 255, 255, 0.7);
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1.6rem;
+  max-width: 768px;
+}
+
+.Para {
+  border-top: 1px solid black;
+  text-align: justify;
+}
+
+/* @media (min-width: 768px) {
+  .Right {
+    border-left: 1px solid black;
+  }
+} */

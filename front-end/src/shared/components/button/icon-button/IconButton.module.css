@@ -1,0 +1,170 @@
+.Root {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--bs-purple);
+  position: relative;
+  /* overflow: hidden; */
+  background: transparent;
+  border: none;
+  transition: all 0.3s ease-out;
+}
+
+.Root:hover {
+  color: rgb(107, 94, 174, 0.6);
+}
+
+.Root:disabled {
+  color: rgba(107, 94, 174, 0.4);
+  cursor: not-allowed;
+}
+
+.PendingBlock {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 1.4em;
+  height: 1.4em;
+  display: inline-block;
+  border: 2.5px solid var(--bs-red);
+  border-left-color: transparent !important;
+  border-radius: 50%;
+  transform: rotate(0deg) translate(-50%, -50%);
+  animation: animation 0.8s linear infinite;
+  transform-origin: 0 0;
+}
+
+@keyframes animation {
+  0% {
+    transform: rotate(0deg) translate(-50%, -50%);
+  }
+
+  100% {
+    transform: rotate(360deg) translate(-50%, -50%);
+  }
+}
+
+.Primary {
+  color: var(--bs-primary);
+}
+
+.Primary:hover {
+  color: rgb(13, 110, 253, 0.6);
+}
+
+.Primary:disabled {
+  color: rgb(13, 110, 253, 0.4);
+}
+
+.Primary .PendingBlock {
+  border-color: var(--bs-info);
+}
+
+.Secondary {
+  color: var(--bs-secondary);
+}
+
+.Secondary:hover {
+  color: rgb(108, 117, 125, 0.6);
+}
+
+.Secondary:disabled {
+  color: rgb(108, 117, 125, 0.4);
+}
+
+.Secondary .PendingBlock {
+  border-color: var(--bs-dark);
+}
+
+.Success {
+  color: var(--bs-success);
+}
+
+.Success:hover {
+  color: rgb(25, 135, 84, 0.6);
+}
+
+.Success:disabled {
+  color: rgb(25, 135, 84, 0.4);
+}
+
+.Success .PendingBlock {
+  border-color: var(--bs-danger);
+}
+
+.Info {
+  color: var(--bs-info);
+}
+
+.Info:hover {
+  color: rgb(13, 202, 240, 0.6);
+}
+
+.Info:disabled {
+  color: rgb(13, 202, 240, 0.4);
+}
+
+.Info .PendingBlock {
+  border-color: var(--bs-primary);
+}
+
+.Warning {
+  color: var(--bs-warning);
+}
+
+.Warning:hover {
+  color: rgb(255, 193, 7, 0.6);
+}
+
+.Warning:disabled {
+  color: rgb(255, 193, 7, 0.4);
+}
+
+.Warning .PendingBlock {
+  border-color: var(--bs-danger);
+}
+
+.Danger {
+  color: var(--bs-danger);
+}
+
+.Danger:hover {
+  color: rgb(220, 53, 69, 0.6);
+}
+
+.Danger:disabled {
+  color: rgba(220, 53, 69, 0.4);
+}
+.Danger .PendingBlock {
+  border-color: var(--bs-warning);
+}
+
+.Light {
+  color: var(--bs-light);
+}
+
+.Light:hover {
+  color: rgb(248, 249, 250, 0.6);
+}
+
+.Light:disabled {
+  color: rgb(248, 249, 250, 0.4);
+}
+.Light .PendingBlock {
+  border-color: var(--bs-dark);
+}
+
+.Dark {
+  color: var(--bs-dark);
+}
+
+.Dark:hover {
+  color: rgb(33, 37, 41, 0.6);
+}
+
+.Dark:disabled {
+  color: rgb(33, 37, 41, 0.4);
+}
+.Dark .PendingBlock {
+  border-color: var(--bs-light);
+}

@@ -1,0 +1,8 @@
+.Table th,
+.Table td {
+  white-space: nowrap;
+}
+
+.Table button:not(:last-child) {
+  margin-right: 1rem;
+}

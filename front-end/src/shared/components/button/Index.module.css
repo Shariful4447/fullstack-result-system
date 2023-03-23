@@ -1,0 +1,33 @@
+.Root {
+  position: relative;
+  overflow: hidden;
+}
+
+.Root:disabled {
+  cursor: not-allowed;
+}
+
+.PendingBlock {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 1.2em;
+  height: 1.2em;
+  display: inline-block;
+  border: 2.5px solid var(--bs-red);
+  border-left-color: transparent !important;
+  border-radius: 50%;
+  transform: rotate(0deg) translate(-50%, -50%);
+  animation: animation 0.8s linear infinite;
+  transform-origin: 0 0;
+}
+
+@keyframes animation {
+  0% {
+    transform: rotate(0deg) translate(-50%, -50%);
+  }
+
+  100% {
+    transform: rotate(360deg) translate(-50%, -50%);
+  }
+}

@@ -1,0 +1,91 @@
+.Root {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 901;
+  width: 260px;
+  height: 100vh;
+  background: var(--bs-dark);
+}
+
+.Menu {
+  position: relative;
+  height: 100%;
+  width: inherit;
+  overflow-y: auto;
+}
+
+.Title {
+  position: sticky;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 0.85rem;
+  text-transform: uppercase;
+  font-size: 1.6rem;
+  color: var(--bs-red);
+  font-weight: 700;
+  background: var(--bs-dark);
+  display: inline-flex;
+  justify-content: center;
+}
+
+.NavItems {
+  list-style: none;
+}
+
+.NavLink,
+.SubItemLink {
+  display: inline-flex;
+  width: 100%;
+  align-items: center;
+  text-decoration: none;
+  padding: 0.5rem 1.2rem;
+  color: var(--bs-gray);
+  transition: all 0.3s ease-out;
+  cursor: pointer;
+}
+
+.NavLink:hover,
+.SubItemLink:hover,
+.LinkActive {
+  color: var(--bs-white);
+}
+
+.NavLinkText {
+  flex-grow: 1;
+  display: inline-block;
+}
+
+.SubItems {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  cursor: pointer;
+}
+
+.SubItems > span > svg {
+  transition: all 0.3s ease-out;
+}
+
+.NavLinkClicked > span > svg:last-child {
+  transform: rotateZ(90deg);
+}
+
+.SubItemLink {
+  padding: 0 1.2rem 0.5rem 3.1rem;
+}
+
+.SubItemLink:first-child {
+  margin-top: -1rem;
+}
+
+@media (min-width: 768px) {
+  .Back {
+    display: none;
+  }
+
+  .Root {
+    position: sticky;
+  }
+}

@@ -1,0 +1,40 @@
+.Root {
+  height: 100vh;
+  background-color: #fafbfe;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.Form {
+  width: 100%;
+  max-width: 576px;
+}
+
+.Title {
+  font-size: 1.6rem;
+  text-align: center;
+  position: relative;
+}
+
+.Back {
+  position: absolute;
+  top: 50%;
+  left: 1rem;
+  transform: translateY(-50%);
+  text-decoration: none;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  color: var(--bs-warning);
+  transition: background 0.3s ease-in-out;
+  font-size: 1.6rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.Back:hover {
+  background: rgb(220, 53, 69, 0.2);
+  color: var(--bs-warning);
+}

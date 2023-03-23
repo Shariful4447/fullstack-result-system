@@ -1,0 +1,10 @@
+.Root {
+  display: flex;
+}
+
+.Content {
+  flex-grow: 1;
+  background-color: #fafbfe;
+  overflow-x: hidden;
+  max-height: 100vh;
+}

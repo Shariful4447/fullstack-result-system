@@ -1,0 +1,13 @@
+.Link {
+  color: var(--bs-secondary);
+  cursor: pointer;
+}
+
+.Link:hover {
+  color: var(--bs-danger);
+}
+
+.Icon {
+  height: calc(0.625rem * 2);
+  width: calc(0.625rem * 2);
+}

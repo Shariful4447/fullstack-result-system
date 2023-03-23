@@ -1,0 +1,15 @@
+.Label {
+  position: relative;
+}
+
+.Label::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+  border-radius: 50%;
+  background: green;
+  height: .5em;
+  width: .5em;
+}

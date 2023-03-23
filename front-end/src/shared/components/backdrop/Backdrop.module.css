@@ -1,0 +1,10 @@
+.Root {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100%;
+  background-color: rgba(55, 64, 74, 0.1);
+  z-index: 900;
+  transition: all 0.2s ease-out;
+}
